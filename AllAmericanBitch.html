@@ -1,2 +1,30 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Date Example</title>
+</head>
+<body>
 
+  <h1>Welcome to My Website</h1>
+  
+  <p>Today's date is: <span id="currentDate"></span></p>
+
+  <script>
+    // JavaScript code to display the current date
+    const currentDateElement = document.getElementById('currentDate');
+    
+    // Get the current date
+    const currentDate = new Date();
+
+    // Format the date as per your requirement
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = currentDate.toLocaleDateString('en-US', options);
+
+    // Display the formatted date in the HTML element
+    currentDateElement.textContent = formattedDate;
+  </script>
+
+</body>
+</html>
