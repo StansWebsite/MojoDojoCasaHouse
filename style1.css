@@ -22,3 +22,15 @@ li a {
 li a:hover {
   background-color: rgb(204,0,204) ;
 }
+body{
+  background-color: rgb(255,0,0)
+}
+img{
+  width: 70px;
+  height: 100px;
+}
+h1{
+  text-align: center;
+  font-size: 100px;
+  
+}
